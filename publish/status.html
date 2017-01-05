@@ -1,0 +1,825 @@
+﻿<!doctype html>
+<html lang="ko">
+<head>
+	<title>대한민국 인테리어 목수협회</title>
+	<meta charset="utf-8">
+	<script src="scripts/jquery.min.js"></script>
+	<style type="text/css">
+		body {font-size:12px;font-family:Malgun Gothic,Dotum,Gulim,Arial;color:#222;background:#fff;}
+		table {border-spacing:0;border:0;}
+		table td {word-wrap:break-word;word-break:break-all;}
+		a {color:red;text-decoration:none;}
+		.project {width:100%;min-width:1000px;text-align:center;margin-bottom:10px;border:2px solid #222;}
+		.project tr:first-child th,.project tr:first-child td {border-top:0;}
+		.project th {text-align:left;padding:5px 0 5px 10px;background:#ededed;border-top:1px dashed #ccc;}
+		.project td {text-align:left;padding:5px 0 5px 10px;border-top:1px dashed #ccc;}
+		.project .update{color:#f00;font-weight:bold;}
+		.list {width:100%;min-width:1000px;border-top:1px solid #ccc;border-right:1px solid #ccc;}
+		.list th {font-weight:bold;background:#454545;color:#fff;padding:7px 0;border-left:1px solid #ccc;border-bottom:1px solid #ccc;vertical-align:top;}
+		.list td {padding:4px 0 4px 8px;text-align:left;border-left:1px solid #ccc;border-bottom:1px solid #ccc;}
+		.list .num {padding:4px 0;text-align:center;}
+		.list .date {padding:4px 0;text-align:center;}
+		.list .vt {vertical-align:top;}
+		.list tbody th {padding:4px 0 4px 8px;background:#ededed;text-align:left;color:#000;}
+		.list tr:hover {background:#f2f2f2;}
+		.list .menu01 {padding:5px 0 4px 8px;}
+		.list .url_link {display:block;}
+		.list .finish {background:#ff3f3f;color:#fff;padding:4px 0;text-align:center;font-weight:bold;}
+		.list .noncomp {background:#fff;padding:4px 0 4px 8px;text-align:left;font-weight:normal;}
+		.list .modify {background:#93cdf9;padding:4px 0;text-align:center;font-weight:bold;}
+		.list .delete {background:#40444f;padding:4px 0;text-align:center;color:#fff;font-weight:bold;}
+		.data_rate {margin:20px 0 10px;font-size:15px;font-weight:bold;}
+		.data_rate .point {color:red;}
+	</style>
+</head>
+<body>
+
+	<table class="project">
+		<colgroup>
+			<col style="width:18%">
+			<col style="width:32%">
+			<col style="width:18%">
+			<col>
+		</colgroup>
+		<tbody>
+			<tr>
+				<th>프로젝트</th>
+				<td><strong>대한민국 인테리어 목수협회</strong></td>
+				<th>인코딩 및 DTD 사용</th>
+				<td>utf-8, html5</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<div class="data_rate"></div>
+	<table class="list">
+	    <thead>
+	        <tr>
+	            <th>No</th>
+	            <th>1Depth</th>
+	            <th>2Depth</th>
+	            <th>3Depth</th>
+	            <th>4Depth</th>
+	            <th>5Depth</th>
+	            <th>UI유형</th>
+	            <th>File Name</th>
+	            <th>진행상황</th>
+	            <th>비고</th>
+	        </tr>
+	    </thead>
+	    <tbody>
+	        <tr>
+	          <td></td>
+	          <th>메인</th>
+	          <td class="vt">&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td class="link">index.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	            <td></td>
+	            <th rowspan="4">협회소개</th>
+	            <td class="vt">인사말</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>콘텐츠</td>
+	            <td class="link">greeting.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">조직도</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>콘텐츠</td>
+	          <td class="link">organ.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	            <td></td>
+	            <td class="vt">자문위원단</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>콘텐츠</td>
+	            <td class="link">counsel_member.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	        <tr>
+	            <td></td>
+	            <td class="vt">오시는 길</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>콘텐츠</td>
+	            <td class="link">map.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="20">알림창</th>
+	          <td rowspan="4" class="vt">공지사항</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">notice_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">notice_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">notice_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	            <td></td>
+	            <td>등록</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>일반게시판</td>
+	            <td class="link">notice_write.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">주요일정안내</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일정게시판</td>
+	          <td class="link">schedule_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일정게시판</td>
+	          <td class="link">schedule_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">schedule_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일정게시판</td>
+	          <td class="link">schedule_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">지부소식</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">news_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">news_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">news_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">news_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">경조사</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">fe_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">fe_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">fe_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">fe_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">사업보고서</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">report_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">report_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">report_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	            <td></td>
+	            <td>등록</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>일반게시판</td>
+	            <td class="link">report_write.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+            <tr>
+              <td></td>
+              <th rowspan="8">나눔행사</th>
+              <td rowspan="4" class="vt">참여창</td>
+              <td>리스트</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>일반게시판</td>
+              <td class="link">part_list.html</td>
+              <td>완료</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>상세</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>일반게시판</td>
+              <td class="link">part_view.html</td>
+              <td>완료</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>수정</td>
+              <td>&nbsp;</td>
+              <td>&nbsp;</td>
+              <td>일반게시판</td>
+              <td class="link">part_modify.html</td>
+              <td>완료</td>
+              <td>&nbsp;</td>
+            </tr>
+            <tr>
+	            <td></td>
+	            <td>등록</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>일반게시판</td>
+	            <td class="link">part_write.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">나눔갤러리</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>갤러리게시판</td>
+	          <td class="link">gallery_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>갤러리게시판</td>
+	          <td class="link">gallery_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>갤러리게시판</td>
+	          <td class="link">gallery_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>갤러리게시판</td>
+	          <td class="link">gallery_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="10">현장/인력구함</th>
+	          <td rowspan="2" class="vt">정회원리스트</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">member_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">member_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="2" class="vt">현장구함</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">recruit1_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">recruit1_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="2" class="vt">인력구함</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">recruit2_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">recruit2_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">인력요청</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">mrequest_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">mrequest_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">mrequest_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	            <td></td>
+	            <td>등록</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>일반게시판</td>
+	            <td class="link">mrequest_write.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="8">노무상담</th>
+	          <td rowspan="4" class="vt">상담요청</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>상담게시판</td>
+	          <td class="link">counsel_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>상담게시판</td>
+	          <td class="link">counsel_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>상담게시판</td>
+	          <td class="link">counsel_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>상담게시판</td>
+	          <td class="link">counsel_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">상담사례</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">counsel2_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">counsel2_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">counsel2_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">counsel2_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="5">후원 및 협력업체</th>
+	          <td class="vt">소개</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>콘텐츠</td>
+	          <td class="link">busi_info.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td rowspan="4" class="vt">요청</td>
+	          <td>리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">request_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">request_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">request_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td>등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">request_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <th>교육기관</th>
+	          <td class="vt">&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>컨텐츠준비중</td>
+	          <td class="link">&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="4">협회관리</th>
+	          <td class="vt">리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">manage_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">상세</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">manage_view.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">manage_modify.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">등록</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>일반게시판</td>
+	          <td class="link">manage_write.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="4">멤버쉽</th>
+	          <td class="vt">로그인</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>프로그램</td>
+	          <td class="link">member01.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">회원가입</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>프로그램</td>
+	          <td class="link">member02.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">회원정보 수정</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>프로그램</td>
+	          <td class="link">member02_01.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <td class="vt">비밀번호찾기</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>프로그램</td>
+	          <td class="link">member03.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	          <td></td>
+	          <th rowspan="2">회원관리</th>
+	          <td class="vt">리스트</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>&nbsp;</td>
+	          <td>게시판</td>
+	          <td class="link">member_manage_list.html</td>
+	          <td>완료</td>
+	          <td>&nbsp;</td>
+          </tr>
+	        <tr>
+	            <td></td>
+	            <td class="vt">상세</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>&nbsp;</td>
+	            <td>게시판</td>
+	            <td class="link">member_manage_view.html</td>
+	            <td>완료</td>
+	            <td>&nbsp;</td>
+	        </tr>
+	    </tbody>
+	</table>
+
+	<script type="text/javascript">
+		$('.list tr').each(function(){
+			var num=$(this).index()+1;
+			$(this).find('td').eq(0).html(num).addClass('num');
+			var tdStr1=$(this).find('td.link').text();
+			$(this).find('td.link').html('<a class="url_link" href="'+tdStr1.replace(/(^\s*)|(\s*$)/g,'')+'" target="_blank">'+tdStr1+'</a>');
+		})
+
+		$('td').each(function(){
+			var vars=$(this).text();
+			if(vars==today){
+			$(this).parent('tr');
+			}else if(vars.indexOf('완료')>-1){
+				$(this).removeClass('comp').addClass('finish');
+			}else if(vars.indexOf('수정중')>-1){
+				$(this).removeClass('finish').addClass('modify');
+			}else if(vars.indexOf('삭제')>-1){
+				$(this).addClass('delete');
+			}else if(vars.indexOf('2016-')>-1){
+				$(this).addClass('date');
+			}
+		})
+		var date=new Date();
+		var yy = date.getFullYear();
+		var mm=""+((date.getMonth()+1)<12)?'0'+(date.getMonth()+1):(date.getMonth()+1);
+		var dd=(date.getDate()<12)?'0'+date.getDate():date.getDate();
+		var today=(yy+'-'+mm+'-'+dd);
+		var tLen=parseInt($('.list').find('tr').length-$('.list').length);
+		$('.list tr').find('td.finish').each(function(){
+			if($(this).text()!=0){
+				$(this).addClass('comp')
+			}
+		})
+		var comp=parseInt($('.list').find('.comp').length);
+		var tRes=(comp*100)/tLen;
+		$('.data_rate').html('총 '+tLen+' 중 ' + comp + '개 완료 <span class="point">'+ ~~tRes +'%</span>' )
+	</script>
+
+</body>
+</html>
