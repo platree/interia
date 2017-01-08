@@ -1,0 +1,1847 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Element</title>
+    <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!-- Bootstrap CSS  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css" media="screen">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css" type="text/css" media="screen">
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.css" type="text/css" media="screen">
+    <!-- ConBiz Iocn -->
+    <link rel="stylesheet" href="assets/fonts/flaticon.css" type="text/css" media="screen">
+    <!-- rs style -->
+    <link rel="stylesheet" type="text/css" href="assets/css/settings.css" media="screen">
+    <!-- ConBiz CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/main.css" media="screen">
+    <!-- Responsive CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" media="screen">
+    <!-- Css3 Transitions Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/animate.css" media="screen">
+    <!-- Slicknav  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/slicknav.css" media="screen">
+
+    <!-- Selected Preset -->
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/emerald.css" media="screen" />
+
+    <!-- Color CSS Styles  -->
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/emerald.css" title="emerald" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/turquoise.css" title="turquoise" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/emerald.css" title="emerald" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/river.css" title="river" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/wisteria.css" title="wisteria" media="screen" />
+    <link rel="stylesheet" type="text/css" href="assets/css/colors/alizarin.css" title="alizarin" media="screen" />
+
+    <!-- Style 수정 CSS  -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css" media="screen">
+    <style type="text/css">
+        .h2tit {font-size: 24px;font-weight: bold;margin: 50px 0 30px 0;padding-top: 20px;}
+        .h3tit {font-size:20px;margin: 50px 0 30px 0}
+        #sidebar {height: 100%;padding-right: 0;padding-top: 50px;}
+        #sidebar li a:hover {background-color:#222222;color:#ffffff;}
+        .col-xs-6 {width:15%}
+        .col-xs-12 {padding-top: 50px;}
+        .navbar {background: none;border-bottom: 0;padding-top: 10px;}
+        .nav>li>a {padding: 3px 15px;}
+        #portfolio-list {overflow: hidden;}
+        .group-btn {margin: 20px 0;}
+        .navbar-inverse {background-color: #fff;border: 1px solid #e5e5e5;padding-top: 0}
+    </style>
+</head>
+<body>
+    <div class="page-container">
+       <!-- top navbar -->
+       <nav class="navbar navbar-fixed-top" role="navigation">
+          <div class="navbar-header">
+             <a class="navbar-brand" href="#">Interia Styleguide</a>
+          </div>
+       </nav>
+       <div class="container-fluid">
+          <div class="row row-offcanvas row-offcanvas-left">
+             <!--sidebar-->
+             <div class="col-xs-6 col-sm-3 sidebar-offcanvas" id="sidebar" role="navigation">
+                <div data-spy="affix" data-offset-top="45" data-offset-bottom="90">
+                   <ul class="nav" id="sidebar-nav">
+                      <li><a href="#section1">그리드</a></li>
+                      <li><a href="#section2">탭</a></li>
+                      <li><a href="#section3">버튼</a></li>
+                      <li><a href="#section4">폼</a></li>
+                      <li><a href="#section5">페이징</a></li>
+                      <li><a href="#section6">레이어팝업</a></li>
+                      <li><a href="#section7">폰트</a></li>
+                      <li><a href="#section8">슬라이드</a></li>
+                      <li><a href="#section9">FAQ 아코디언</a></li>
+                      <li><a href="#section10">서비스</a></li>
+                      <li><a href="#section11">Contact US</a></li>
+                      <li><a href="#section12">Tables</a></li>
+                      <li><a href="#section13">댓글</a></li>
+                      <li><a href="#section14">컨텐츠 1</a></li>
+                      <li><a href="#section15">컨텐츠 2</a></li>
+                   </ul>
+                </div>
+             </div>
+             <!--/sidebar-->
+             <!--/main-->
+             <div class="col-xs-12 col-sm-9" data-spy="scroll" data-target="#sidebar-nav">
+                 <div class="row">
+                    <div class="col-lg-6">
+                      <div class="well">
+                        <h1>h1. Bootstrap 3</h1>
+                        <h2>h2. Heading 2</h2>
+                        <h3>h3. Heading 3</h3>
+                        <h4>h4. Heading 4</h4>
+                        <h5>h5. Heading 5</h5>
+                        <h6>h6. Heading 6</h6>
+                      </div>
+                    </div>
+                    <div class="col-lg-6">
+                      <h3>Bootstrap Framework</h3>
+                      <p>In simple terms, a responsive web design figures out what resolution of device it's being served on. Flexible grids then size correctly to fit the screen.</p>
+                      <p>The new Bootstrap 3 promises to be a smaller build. The separate Bootstrap base and responsive.css files have now been merged into one. There is no more fixed grid, only fluid.</p>
+                      <hr>
+                       <blockquote class="pull-right">
+                        <p>Have you ever had a project where you thought it would be so much better to just throw everything out and start over? I believe that’s what’s happening with BS3.</p>
+                        <small><cite title="Source Title">Quasipickle</cite></small>
+                      </blockquote>
+                    </div>
+                  </div>
+                <!-- section1 -->
+                <div class="h2tit" id="section1">그리드</div>
+                    <div class="container">
+                       <div class="row">
+                          <div class="col-lg-12">
+                             <div class="well">
+                                <p>col-lg-12</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <div class="col-lg-4">
+                             <div class="well">
+                                <p>col-lg-4</p>
+                             </div>
+                          </div>
+                          <div class="col-lg-4">
+                             <div class="well">
+                                <p>col-lg-4</p>
+                             </div>
+                          </div>
+                          <div class="col-lg-4">
+                             <div class="well">
+                                <p>col-lg-4</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <div class="col-lg-6 col-sm-6">
+                             <div class="well">
+                                <p>col-lg-6</p>
+                             </div>
+                          </div>
+                          <div class="col-lg-6 col-sm-6">
+                             <div class="well">
+                                <p>col-lg-6</p>
+                             </div>
+                          </div>
+                       </div>
+                       <div class="row">
+                          <div class="col-lg-9 col-sm-6">
+                             <div class="well">col-lg-9 / col-sm-6</div>
+                          </div>
+                          <div class="col-lg-3 col-sm-6">
+                             <div class="well">col-lg-3 / col-sm-6</div>
+                          </div>
+                       </div>
+                    </div>
+                <!--// section1 -->
+                <!-- section2 -->
+                <div class="h2tit" id="section2">탭</div>
+                    <div class="h3tit">포트폴리오 중앙 탭</div>
+                    <!-- 포트폴리오 중앙 탭 -->
+                    <div class="controls text-center">
+                      <a class="filter active" data-filter="all">All</a>
+                      <a class="filter" data-filter=".buildings">Buildings</a>
+                      <a class="filter" data-filter=".architecture">Architecture</a>
+                      <a class="filter" data-filter=".interior">Interior</a>
+                      <a class="filter" data-filter=".isolation">Isolation</a>
+                    </div>
+                    <div id="portfolio-list">
+                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix buildings interior" style="display: inline-block;">
+                        <div class="portfolio-item">
+                          <img src="assets/img/portfolio/img-1.jpg" alt="">
+                          <div class="overlay">
+                            <div class="icon">
+                              <a href="single-project.html"><i class="icon-pointer left"></i></a>
+                              <a href="assets/img/portfolio/img-1.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3><a href="#">Duautem veleum</a></h3>
+                            <p>Architecture, Interior</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix buildings architecture" style="display: inline-block;">
+                        <div class="portfolio-item">
+                          <img src="assets/img/portfolio/img-2.jpg" alt="">
+                          <div class="overlay">
+                            <div class="icon">
+                               <a href="single-project.html"><i class="icon-pointer left"></i></a>
+                              <a href="assets/img/portfolio/img-2.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3><a href="#">Consetetur Sadipscing</a></h3>
+                            <p>Buildings, Tiling</p>
+                          </div>
+                        </div>
+
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix buildings isolation" style="display: inline-block;">
+                        <div class="portfolio-item">
+                          <img src="assets/img/portfolio/img-3.jpg" alt="">
+                          <div class="overlay">
+                            <div class="icon">
+                              <a href="single-project.html"><i class="icon-pointer left"></i></a>
+                              <a href="assets/img/portfolio/img-3.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3><a href="#">Sed diam nonumy</a></h3>
+                            <p>Architecture</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix interior">
+                        <div class="portfolio-item">
+                          <img src="assets/img/portfolio/img-4.jpg" alt="">
+                          <div class="overlay">
+                            <div class="icon">
+                                <a href="single-project.html"><i class="icon-pointer left"></i></a>
+                                <a href="assets/img/portfolio/img-4.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3><a href="#">At vero accusam</a></h3>
+                            <p>Interior, Plumbing</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix buildings interior" style="display: inline-block;">
+                        <div class="portfolio-item">
+                          <img src="assets/img/portfolio/img-5.jpg" alt="">
+                          <div class="overlay">
+                            <div class="icon">
+                              <a href="single-project.html"><i class="icon-pointer left"></i></a>
+                              <a href="assets/img/portfolio/img-5.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3><a href="#">Sed diam nonumy</a></h3>
+                            <p>Architecture</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4 col-lg-4 col-sm-6 col-xs-12 mix buildings isolation" style="display: inline-block;">
+                        <div class="portfolio-item">
+                          <img src="assets/img/portfolio/img-6.jpg" alt="">
+                          <div class="overlay">
+                            <div class="icon">
+                              <a href="single-project.html"><i class="icon-pointer left"></i></a>
+                              <a href="assets/img/portfolio/img-6.jpg" class="lightbox"><i class="icon-magnifier right"></i></a>
+                            </div>
+                          </div>
+                          <div class="content">
+                            <h3><a href="#">At vero accusam</a></h3>
+                            <p>Interior, Plumbing</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--// 포트폴리오 중앙 탭 -->
+                    <!-- Tabs -->
+                    <div class="h3tit">탭1</div>
+                    <div class="positions">
+                        <div class="tabs-section">
+                          <!-- Nav Tabs -->
+                          <ul class="nav nav-tabs">
+                            <li class="tabs-1"><a href="#tab-1" data-toggle="tab" aria-expanded="false"> Job Posting Title</a></li>
+                            <li class="tabs-2"><a href="#tab-2" data-toggle="tab" aria-expanded="false">Location</a></li>
+                            <li class="tabs-3"><a href="#tab-3" data-toggle="tab" aria-expanded="false">Department</a></li>
+                            <li class="tabs-4 active"><a href="#tab-4" data-toggle="tab" aria-expanded="true">Date</a></li>
+                          </ul>
+                          <!-- Tab panels -->
+                          <div class="tab-content">
+                            <!-- Tab Content 1 -->
+                            <div class="tab-pane fade" id="tab-1">
+                              <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Tab Content 2 -->
+                            <div class="tab-pane fade" id="tab-2">
+                              <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Tab Content 3 -->
+                            <div class="tab-pane fade" id="tab-3">
+                              <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                            <!-- Tab Content 4 -->
+                            <div class="tab-pane fade active in" id="tab-4">
+                              <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                  <tr>
+                                    <td><a href="#">Deputy Principal ConBiz Manager</a></td>
+                                    <td>Toronto, Ontario, CA</td>
+                                    <td>Top Management</td>
+                                    <td>june 5, 2015</td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                          <!-- End Tab Panels -->
+                        </div>
+                    </div>
+                    <div class="h3tit">탭2</div>
+                      <div class="positions">
+                          <ul class="nav nav-tabs">
+                             <li class="active"><a href="#A" data-toggle="tab" aria-expanded="true">Section 1</a></li>
+                             <li class=""><a href="#B" data-toggle="tab" aria-expanded="false">Section 2</a></li>
+                             <li><a href="#C" data-toggle="tab">Section 3</a></li>
+                          </ul>
+                          <div class="tabbable">
+                             <div class="tab-content">
+                                <div class="tab-pane active" id="A">
+                                   <p>I'm in Section A.</p>
+                                </div>
+                                <div class="tab-pane" id="B">
+                                   <p>Howdy, I'm in Section B.</p>
+                                </div>
+                                <div class="tab-pane" id="C">
+                                   <p>What up girl, this is Section C.</p>
+                                </div>
+                             </div>
+                          </div>
+                      </div>
+                      <div class="h3tit">탭3</div>
+                        <div class="positions">
+                            <ul class="nav nav-tabs">
+                               <li class="active"><a href="#D" data-toggle="tab" aria-expanded="true">menu 1</a></li>
+                               <li class=""><a href="#E" data-toggle="tab" aria-expanded="false">menu 2</a></li>
+                               <li><a href="#F" data-toggle="tab">menu 3</a></li>
+                            </ul>
+                            <div class="tabbable">
+                               <div class="tab-content noline">
+                                  <div class="tab-pane active" id="D">
+                                     <ul class="menu_3depth">
+                                         <li><a href="#">menu 1-1</a></li>
+                                         <li><a href="#">menu 1-1</a></li>
+                                         <li><a href="#">menu 1-1</a></li>
+                                     </ul>
+                                  </div>
+                                  <div class="tab-pane" id="E">
+                                     <ul class="menu_3depth">
+                                         <li><a href="#">menu 2-1</a></li>
+                                         <li><a href="#">menu 2-1</a></li>
+                                         <li><a href="#">menu 2-1</a></li>
+                                     </ul>
+                                  </div>
+                                  <div class="tab-pane" id="F">
+                                     <ul class="menu_3depth">
+                                         <li><a href="#">menu 3-1</a></li>
+                                         <li><a href="#">menu 3-1</a></li>
+                                         <li><a href="#">menu 3-1</a></li>
+                                     </ul>
+                                  </div>
+                               </div>
+                            </div>
+                        </div>
+                    <!--// Tabs -->
+                    <div class="h3tit">컨텐츠 탭</div>
+                    <!-- 컨텐츠 탭 -->
+                    <div class="services-2">
+                        <div class="container">
+                          <div class="row">
+                            <div class="services tab-container clearfix">
+                              <div class="col-md-3 col-sm-4 col-xs-12">
+                                <div class="tab-menu">
+                                  <ul class="list-group">
+                                    <li class="list-item"><a href="#">General ConBiz</a></li>
+                                    <li class="list-item"><a href="#">Residential ConBiz</a></li>
+                                    <li class="list-item"><a href="#">Institutional ConBiz</a></li>
+                                    <li class="list-item active"><a href="#">Temporary Buildings</a></li>
+                                    <li class="list-item"><a href="#">Commercial ConBiz</a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                              <div class="col-md-9 col-sm-8 col-xs-12">
+                                <!-- Tabs content 1 -->
+                                <div class="tabs-content clearfix">
+                                  <div class="col-md-8">
+                                    <div class="thumb">
+                                      <img src="assets/img/services/img-1.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="services-list">
+                                      <ul class="list">
+                                        <li><span>1</span> Demolition</li>
+                                        <li><span>1</span> Framing</li>
+                                        <li><span>1</span> Drywall</li>
+                                        <li><span>1</span> Painting</li>
+                                        <li><span>1</span> Door Hardware</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-lg btn-effect">Learn More</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- Tabs content 2 -->
+                                <div class="tabs-content clearfix">
+                                  <div class="col-md-8">
+                                    <div class="thumb">
+                                      <img src="assets/img/services/img-2.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="services-list">
+                                      <ul class="list">
+                                        <li><span>1</span> Demolition</li>
+                                        <li><span>1</span> Framing</li>
+                                        <li><span>1</span> Drywall</li>
+                                        <li><span>1</span> Painting</li>
+                                        <li><span>1</span> Door Hardware</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-lg btn-effect">Learn More</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- Tabs content 3 -->
+                                <div class="tabs-content clearfix">
+                                  <div class="col-md-8">
+                                    <div class="thumb">
+                                      <img src="assets/img/services/img-3.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="services-list">
+                                      <ul class="list">
+                                        <li><span>1</span> Demolition</li>
+                                        <li><span>1</span> Framing</li>
+                                        <li><span>1</span> Drywall</li>
+                                        <li><span>1</span> Painting</li>
+                                        <li><span>1</span> Door Hardware</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-lg btn-effect">Learn More</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- Tabs content 4 -->
+                                <div class="tabs-content clearfix active">
+                                  <div class="col-md-8">
+                                    <div class="thumb">
+                                      <img src="assets/img/services/img-4.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="services-list">
+                                      <ul class="list">
+                                        <li><span>1</span> Demolition</li>
+                                        <li><span>1</span> Framing</li>
+                                        <li><span>1</span> Drywall</li>
+                                        <li><span>1</span> Painting</li>
+                                        <li><span>1</span> Door Hardware</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-lg btn-effect">Learn More</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                                <!-- Tabs content 5 -->
+                                <div class="tabs-content clearfix">
+                                  <div class="col-md-8">
+                                    <div class="thumb">
+                                      <img src="assets/img/services/img-5.jpg" alt="">
+                                    </div>
+                                  </div>
+                                  <div class="col-md-4">
+                                    <div class="services-list">
+                                      <ul class="list">
+                                        <li><span>1</span> Demolition</li>
+                                        <li><span>1</span> Framing</li>
+                                        <li><span>1</span> Drywall</li>
+                                        <li><span>1</span> Painting</li>
+                                        <li><span>1</span> Door Hardware</li>
+                                      </ul>
+                                      <a href="#" class="btn btn-lg btn-effect">Learn More</a>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <!--// 컨텐츠 탭 -->
+                    <div class="h3tit">네비게이션 바 탭</div>
+                    <!-- 네비게이션 바 탭 -->
+                    <div class="container">
+                		<nav class="navbar navbar-inverse" role="navigation">
+                        <!-- Collect the nav links, forms, and other content for toggling -->
+                        <div class="collapse navbar-collapse navbar-ex1-collapse">
+                          <ul class="nav navbar-nav">
+                            <li class="active"><a href="#">Home</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li><a href="#">Link</a></li>
+                            <li class="dropdown">
+                              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                              <ul class="dropdown-menu">
+                                <li><a href="#">Action</a></li>
+                                <li><a href="#">One more separated link</a></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <ul class="nav navbar-nav navbar-right">
+                            <li><a href="#">Link</a></li>
+                          </ul>
+                        </div><!-- /.navbar-collapse -->
+                      </nav>
+                	</div>
+                    <!-- 네비게이션 바 -->
+
+                <!--// section2 -->
+                <!-- section3 -->
+                <div class="h2tit" id="section3">버튼</div>
+                    <a href="#" class="btn btn-effect">Read More <i class="fa fa-long-arrow-right"></i></a>
+                    <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                    <a href="#" class="btn btn-effect">Read More</a>
+                    <a href="#" class="btn btn btn-border btn-small">Hire Us Now</a>
+                    <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
+                    <a href="#" class="btn btn-effect">Contact Us <i class="icon-envelope"></i></a>
+                    <div class="group-btn">
+                        <a href="#" class="btn btn-wite">Projects</a>
+                        <a href="#" class="btn btn-default">default</a>
+                        <a href="#" class="btn btn-primary">primary</a>
+                        <a href="#" class="btn btn-success">success</a>
+                        <a href="#" class="btn btn-info">info</a>
+                        <a href="#" class="btn btn-warning">warning</a>
+                        <a href="#" class="btn btn-danger">danger</a>
+                    </div>
+                    <div class="group-btn">
+                        <a href="#" class="btn-xs btn-wite">Projects</a>
+                        <a href="#" class="btn-xs btn-default">default</a>
+                        <a href="#" class="btn-xs btn-primary">primary</a>
+                        <a href="#" class="btn-xs btn-success">success</a>
+                        <a href="#" class="btn-xs btn-info">info</a>
+                        <a href="#" class="btn-xs btn-warning">warning</a>
+                        <a href="#" class="btn-xs btn-danger">danger</a>
+                    </div>
+                    <div class="group-btn">
+                        <a href="#" class="btn-sm btn-wite">Projects</a>
+                        <a href="#" class="btn-sm btn-default">default</a>
+                        <a href="#" class="btn-sm btn-primary">primary</a>
+                        <a href="#" class="btn-sm btn-success">success</a>
+                        <a href="#" class="btn-sm btn-info">info</a>
+                        <a href="#" class="btn-sm btn-warning">warning</a>
+                        <a href="#" class="btn-sm btn-danger">danger</a>
+                    </div>
+                    <div class="group-btn">
+                        <a href="#" class="btn-lg btn-wite">Projects</a>
+                        <a href="#" class="btn-lg btn-default">default</a>
+                        <a href="#" class="btn-lg btn-primary">primary</a>
+                        <a href="#" class="btn-lg btn-success">success</a>
+                        <a href="#" class="btn-lg btn-info">info</a>
+                        <a href="#" class="btn-lg btn-warning">warning</a>
+                        <a href="#" class="btn-lg btn-danger">danger</a>
+                    </div>
+
+                <!--// section3 -->
+                <!-- section4 -->
+                <div class="h2tit" id="section4">폼</div>
+                    <form class="form-inline well">
+                        <fieldset>
+                            <legend>Login</legend>
+                            <div class="col-md-3">
+                              	<input type="text" class="form-control" placeholder="Email">
+                            </div>
+                            <div class="col-md-3">
+                            	<input type="password" class="form-control" placeholder="Password">
+                            </div>
+                            <div class="checkbox">
+                              <label>
+                                <input type="checkbox"> Remember me
+                              </label>
+                            </div>
+                            <button type="submit" class="btn btn-success">Sign in</button>
+                        </fieldset>
+                      </form>
+                      <form class="form-horizontal well">
+                        <fieldset>
+                          <legend>Inputs</legend>
+                          <div class="control-group">
+                            <label class="control-label" for="input01">Text input</label>
+                            <div class="controls">
+                              <input type="text" class="form-control input-xlarge" id="input01">
+                              <p class="help-block">In addition to freeform text, any HTML5 text-based input appears like so.</p>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="optionsCheckbox">Checkbox</label>
+                            <div class="controls">
+                              <label class="checkbox">
+                                <input type="checkbox" id="optionsCheckbox" value="option1">
+                                Option one is this and that—be sure to include why it's great
+                              </label>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="select01">Select list</label>
+                            <div class="controls">
+                              <select id="select01" class="form-control">
+                                <option>something</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="multiSelect">Multicon-select</label>
+                            <div class="controls">
+                              <select multiple="multiple" id="multiSelect" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="fileInput">File input</label>
+                            <div class="controls">
+                              <input class="form-control input-file" id="fileInput" type="file">
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="textarea">Textarea</label>
+                            <div class="controls">
+                              <textarea class="form-control input-xlarge" id="textarea" rows="3"></textarea>
+                            </div>
+                          </div>
+                          <div class="control-group">
+                            <label class="control-label" for="optionsCheckbox2">Disabled checkbox</label>
+                            <div class="controls">
+                              <label class="checkbox">
+                                <input type="checkbox" id="optionsCheckbox2" value="option1" disabled="">
+                                This is a disabled checkbox
+                              </label>
+                            </div>
+                          </div>
+                          <div class="control-group warning">
+                            <label class="control-label" for="inputWarning">Input with warning</label>
+                            <div class="controls">
+                              <input type="text" id="inputWarning" class="form-control">
+                              <span class="help-inline">Something may have gone wrong</span>
+                            </div>
+                          </div>
+                         <hr>
+                          <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">Save changes</button>
+                            <button type="reset" class="btn btn-default ">Cancel</button>
+                          </div>
+                        </fieldset>
+                      </form>
+                <!--// section4 -->
+                <!-- section5 -->
+                <div class="h2tit" id="section5">페이징</div>
+                    <!-- 게시판형 페이징 -->
+                    <div class="h3tit">게시판</div>
+                    <div class="text-center">
+                       <ul class="pagination pagination-large">
+                          <li class="disabled"><span>«</span></li>
+                          <li class="active"><span>1</span></li>
+                          <li><a href="#">2</a></li>
+                          <li><a href="#">3</a></li>
+                          <li><a href="#">4</a></li>
+                          <li><a href="#">5</a></li>
+                          <li><a href="#">6</a></li>
+                          <li><a href="#">7</a></li>
+                          <li><a href="#">8</a></li>
+                          <li class="disabled"><span>...</span></li>
+                          <li><a href="#">54</a></li>
+                          <li><a href="#">55</a></li>
+                          <li><a href="#" rel="next">»</a></li>
+                       </ul>
+                    </div>
+                    <!--// 게시판형 페이징 -->
+                    <div class="h3tit">블로그 댓글</div>
+                    <!-- 블로그 댓글 페이징 -->
+                    <div id="pagination">
+                        <span class="current page-num">1</span>
+                        <a class="page-num" href="#">2</a>
+                        <a class="page-num" href="#">3</a>
+                        <a class="next-page" href="#">Next</a>
+                    </div>
+                    <!--// 블로그 댓글 페이징 -->
+                <!--// section5 -->
+                <!-- section6 -->
+                <div class="h2tit" id="section6">레이어팝업</div>
+                    <!-- 레이어팝업 -->
+                    <button class="btn btn-default  layerpop" id="jq-btn-layerpop">레이어 팝업 열기</button>
+                	<div id="mask"></div>
+                	<div class="jq-layerpop">
+                		<!-- Layer Start -->
+                		<section class="layerpop wd340">
+                			<div class="wrap_layer">
+                				<h1 class="tit-h">레이어 팝업 타이틀</h1>
+                				<div class="contents">
+                					123<br/>contents<br/>contents
+                				</div>
+                			</div>
+                			<a href="javascript:;" class="btn ico close" id="layerpop-close"><i>팝업 닫기</i></a>
+                		</section>
+                		<!-- //Layer Start -->
+                	</div>
+                    <!--// 레이어팝업 -->
+
+                <!--// section6 -->
+                <!-- section7 -->
+                <div class="h2tit" id="section7">폰트</div>
+
+                <!--// section7 -->
+                <!-- section8 -->
+                <div class="h2tit" id="section8">슬라이드</div>
+                    <div class="h3tit">프로젝트 슬라이드</div>
+                    <!-- Recent Projects Carousel -->
+                    <div class="row">
+                        <div class="project">
+                            <div id="projects-carousel" class="touch-carousel">
+                              <div class="col-md-12">
+                                <div class="projects-box item">
+                                  <div class="projects-thumb">
+                                    <a href="#">
+                                      <img src="assets/img/news/img1.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="projects-content">
+                                    <h4><a href="#">There are many variations</a></h4>
+                                    <div class="recent-meta">
+                                      <span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>
+                                      <span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>
+                                    </div>
+                                    <p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>
+                                    <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="projects-box item">
+                                  <div class="projects-thumb">
+                                    <a href="#">
+                                      <img src="assets/img/news/img2.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="projects-content">
+                                    <h4><a href="#">high end flooring trends</a></h4>
+                                    <div class="recent-meta">
+                                      <span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>
+                                      <span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>
+                                    </div>
+                                    <p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>
+                                    <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                               <div class="col-md-12">
+                                <div class="projects-box item">
+                                  <div class="projects-thumb">
+                                    <a href="#">
+                                      <img src="assets/img/news/img3.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="projects-content">
+                                    <h4><a href="#">stones with new laminate flooring</a></h4>
+                                    <div class="recent-meta">
+                                      <span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>
+                                      <span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>
+                                    </div>
+                                    <p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>
+                                      <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="projects-box item">
+                                  <div class="projects-thumb">
+                                    <a href="#">
+                                      <img src="assets/img/news/img4.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="projects-content">
+                                    <h4><a href="#">majority have suffered alteration</a></h4>
+                                    <div class="recent-meta">
+                                      <span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>
+                                      <span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>
+                                    </div>
+                                    <p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>
+                                    <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-md-12">
+                                <div class="projects-box item">
+                                  <div class="projects-thumb">
+                                    <a href="#">
+                                      <img src="assets/img/news/img5.jpg" alt="">
+                                    </a>
+                                  </div>
+                                  <div class="projects-content">
+                                    <h4><a href="#">Finding New Buildings</a></h4>
+                                    <div class="recent-meta">
+                                      <span class="date"><i class="fa fa-file-text-o"></i> SEPT 12, 2015</span>
+                                      <span class="comments"><i class="fa fa-comments-o"></i> No Comments</span>
+                                    </div>
+                                    <p class="projects-desc">Constructor explains how you can enjoy high end flooring trends like textured wood and realistic stones with new laminate flooring.</p>
+                                    <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--// Recent Projects Carousel -->
+                    <div class="h3tit">클라이언트 슬라이드</div>
+                    <!-- 클라이언트 슬라이드 -->
+                    <div class="row">
+                        <div id="client-logo" class="touch-carousel">
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-01.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-02.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-03.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-04.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-05.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-06.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-07.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                           <div class="client-logo item" >
+                              <div class="client-item">
+                                 <a href="#">
+                                 <img src="assets/img/clients/logo-08.png" alt="" />
+                                 </a>
+                              </div>
+                           </div>
+                        </div>
+                    </div>
+                    <!--// 클라이언트 슬라이드 -->
+                    <div class="h3tit">슬라이드1</div>
+                    <!-- 슬라이드1 -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                                <!-- Indicators -->
+                                <ol class="carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2" class="active"></li>
+                                </ol>
+                                <!-- Wrapper for slides -->
+                                <div class="carousel-inner">
+                                    <div class="item">
+                                        <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                                    </div>
+                                    <div class="item active">
+                                        <img class="img-responsive" src="http://placehold.it/750x500" alt="">
+                                    </div>
+                                </div>
+                                <!-- Controls -->
+                                <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                </a>
+                                <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <h3>Project Description</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae. Sed dui lorem, adipiscing in adipiscing et, interdum nec metus. Mauris ultricies, justo eu convallis placerat, felis enim.</p>
+                            <h3>Project Details</h3>
+                            <ul>
+                                <li>Lorem Ipsum</li>
+                                <li>Dolor Sit Amet</li>
+                                <li>Consectetur</li>
+                                <li>Adipiscing Elit</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 슬라이드1 -->
+                    <div class="h3tit">메인슬라이드</div>
+                    <!-- 메인슬라이드 -->
+                    <!-- Main Slider Section -->
+                    <section id="slider">
+                        <div class="tp-banner-container">
+                          <div class="tp-banner">
+                            <ul>
+                              <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="assets/img/slider/slide1.jpg" data-bgfit="cover" data-delay="5000" data-saveperformance="on" data-title="Ken Burns Slide">
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/img/dummy.png" alt="laptopmockup_sliderdy" data-lazyload="assets/img/slider/slide1.jpg">
+                                <!-- LAYERS -->
+                                <div class="tp-caption large_bold_white lft tp-resizeme start" data-x="30" data-y="130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1200" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                  <h1 class="big-title">We <span>Build</span><br> Great Projects</h1>
+                                </div>
+                                <div class="tp-caption lfl tp-resizeme start" data-x="30" data-y="260" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1600" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                  <p class="small-description">Lorem ipsum is simply dummy text of the printing <br> and typesetting industry</p>
+                                </div>
+                                <div class="tp-caption customin tp-resizeme start" data-x="30" data-y="320" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1800" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1300" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                <a href="#" class="btn btn-large btn-effect">Learn More <i class="icon-arrow-right"></i></a>
+                                </div>
+                                <!-- LAYER NR. 2 -->
+                                <div class="tp-caption lfb start" data-y="50" data-x="750"  style="z-index: 9; left: 839.5px; top: 125px; visibility: visible; opacity: 0; transform: translate3d(0px, 763px, 0px);" data-captionhidden="on" data-endeasing="Power4.easeIn" data-endspeed="1000" data-start="1200" data-speed="800" data-customout="x:0;y:0;z:0;rotationX:0;rotationY:0;rotationZ:0;scaleX:0.75;scaleY:0.75;skewX:0;skewY:0;opacity:0;transformPerspective:600;transformOrigin:50% 50%;" ><img src="assets/img/dummy.png" alt="" data-lazyload="assets/img/slider/3dlayer_3.png">
+                                </div>
+                              </li>
+                              <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="assets/img/slider/slide2.jpg" data-bgfit="cover" data-delay="5000" data-saveperformance="on" data-title="Ken Burns Slide">
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/img/dummy.png" alt="laptopmockup_sliderdy" data-lazyload="assets/img/slider/slide2.jpg">
+                                <!-- LAYERS -->
+                                <div class="tp-caption ConBiz-medium sfb tp-resizeme start" data-x="30" data-y="130" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1200" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                  <h1 class="big-title">Make It <span>Happen</span><br> Right Now!</h1>
+                                </div>
+                                <div class="tp-caption ConBiz-medium sfb tp-resizeme start" data-x="30" data-y="260" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1600" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                  <p class="small-description">Lorem ipsum dolor sit amet, consectetur adipisicing elit<br> sed do eiusmod tempor incididunt ut labore et dolore.</p>
+                                </div>
+                                <div class="tp-caption ConBiz-medium sfb tp-resizeme start" data-x="30" data-y="320" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1800" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1300" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                <a href="#" class="btn btn-large btn-effect">Contact Us <i class="icon-envelope"></i></a>
+                                </div>
+                              </li>
+                              <li data-transition="fade" data-slotamount="7" data-masterspeed="2000" data-thumb="assets/img/slider/slide3.jpg" data-bgfit="cover" data-delay="5000" data-saveperformance="on" data-title="Ken Burns Slide">
+                                <!-- MAIN IMAGE -->
+                                <img src="assets/img/dummy.png" alt="laptopmockup_sliderdy" data-lazyload="assets/img/slider/slide3.jpg">
+                                <!-- LAYERS -->
+                                <div class="tp-caption large_bold_white tp-resizeme lft start" data-x="center" data-hoffset="0" data-y="center" data-voffset="-60" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1600" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1000" data-endeasing="Power4.easeIn" style="z-index: 11;">
+                                  <h1 class="big-title">
+                                    ConBiz for Construction Company
+                                  </h1>
+                                </div>
+                                <div class="tp-caption tp-resizeme start" data-x="center" data-hoffset="0" data-y="center" data-voffset="0"  style="z-index: 14; min-height: 0px; min-width: 0px; line-height: 25px; border-width: 0px; margin: 0px; padding: 0px; letter-spacing: 0px; font-size: 18px; left: 259.5px; top: 340px; visibility: visible; opacity: 0; transform: translate3d(0px, 0px, 0px);" data-endeasing="Back.easeIn" data-endspeed="400" data-start="1500" data-speed="1000" data-customin="x:0;y:0;z:0;rotationX:90;rotationY:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" ><p class="small-description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. </p>
+                                </div>
+
+                                <div class="tp-caption customin tp-resizeme lfb start" data-x="center" data-hoffset="0" data-y="center" data-voffset="60" data-customin="x:0;y:150;z:0;rotationZ:0;scaleX:1;scaleY:1;skewX:0;skewY:0;opacity:0;transformPerspective:200;transformOrigin:50% 0%;" data-speed="800" data-start="1800" data-easing="easeOutQuad" data-splitin="none" data-splitout="none" data-elementdelay="0.01" data-endelementdelay="0.1" data-endspeed="1300" data-endeasing="Power4.easeIn" style="z-index: 11;"><a href="#" class="btn btn-large btn-border">Get Started</a></div>
+                              </li>
+                            </ul>
+                            <div class="tp-bannertimer"></div>
+                          </div>
+                        </div>
+                      </section>
+                    <!-- Main Slider Section End-->
+                    <!--// 메인슬라이드 -->
+                    <div class="h3tit">슬라이드2</div>
+                    <!--  슬라이드2 -->
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="wrap_owl">
+                                <div id="owl-slider1" class="owl-theme">
+                                  <div class="item"><a href="assets/img/portfolio/img-1.jpg" class="lightbox"><img src="assets/img/portfolio/img-1.jpg" alt="" ></a></div>
+                                  <div class="item"><a href="assets/img/portfolio/img-2.jpg" class="lightbox"><img src="assets/img/portfolio/img-2.jpg" alt="" ></a></div>
+                                  <div class="item"><a href="assets/img/portfolio/img-3.jpg" class="lightbox"><img src="assets/img/portfolio/img-3.jpg" alt="" ></a></div>
+                                  <div class="item"><a href="assets/img/portfolio/img-4.jpg" class="lightbox"><img src="assets/img/portfolio/img-4.jpg" alt="" ></a></div>
+                                  <div class="item"><a href="assets/img/portfolio/img-5.jpg" class="lightbox"><img src="assets/img/portfolio/img-5.jpg" alt="" ></a></div>
+                                  <div class="item"><h1>6</h1></div>
+                                  <div class="item"><h1>7</h1></div>
+                                  <div class="item"><h1>8</h1></div>
+                                  <div class="item"><h1>9</h1></div>
+                                  <div class="item"><h1>10</h1></div>
+                                  <div class="item"><h1>11</h1></div>
+                                  <div class="item"><h1>12</h1></div>
+                                  <div class="item"><h1>13</h1></div>
+                                  <div class="item"><h1>14</h1></div>
+                                  <div class="item"><h1>15</h1></div>
+                                  <div class="item"><h1>16</h1></div>
+                                </div>
+                                <!-- css 별도 작업 필요 - 좌우화살표, play, stop
+                                <div class="customNavigation">
+                                  <a class="box_arrow prev"><i class="fa fa-chevron-left"></i></a>
+                                  <a class="box_arrow next"><i class="fa fa-chevron-right"></i></a>
+                                  <div class="tp-rightarrow tparrows default preview1 next"></div>
+                                  <a class="btn btn-default play">Autoplay</a>
+                                  <a class="btn btn-default stop">Stop</a>
+                                </div>
+                                -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--// 슬라이드2 -->
+                <!--// section8 -->
+                <!-- section9 -->
+                <div class="h2tit" id="section9">FAQ 아코디언</div>
+                    <!-- FAQ 아코디언 -->
+                    <div class="panel-group" id="accordion">
+                        <!-- Start Accordion 1 -->
+                        <div class="panel panel-default">
+                          <!-- Toggle Heading -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse-1" aria-expanded="false" class="collapsed">
+                              Corporate Health and Wellness
+                              </a>
+                            </h4>
+                          </div>
+                          <!-- Toggle Content -->
+                          <div id="collapse-1" class="panel-collapse collapse" aria-expanded="false" style="height: 0px;">
+                            <div class="panel-body">
+                              <p>Don’t hesitate to contact us if you have any question or concern. We are here to help and are glad to resolve any of your issue. Please feel free to reach us anytime. We’ll get back to you as soon as possible.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Accordion 1 -->
+
+                        <!-- Start Accordion 2 -->
+                        <div class="panel panel-default">
+                          <!-- Toggle Heading -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse-2" class="" aria-expanded="true">
+                              Our Company-Paid Benefits
+                              </a>
+                            </h4>
+                          </div>
+                          <!-- Toggle Content -->
+                          <div id="collapse-2" class="panel-collapse collapse in" aria-expanded="true">
+                            <div class="panel-body">
+                              <p>Nam viverra scelerisque turpis id fermentum. Sed bibendum sit amet odio tempor venenatis. Quisque vel lectus sem. Sed convallis ligula sit amet. Nam viverra scelerisque turpis id fermentum.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Accordion 2 -->
+
+                        <!-- Start Accordion 3 -->
+                        <div class="panel panel-default">
+                          <!-- Toggle Heading -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse-3" class="collapsed" aria-expanded="false">
+                              Voluntary Employee-Paid Benefits
+                              </a>
+                            </h4>
+                          </div>
+                          <!-- Toggle Content -->
+                          <div id="collapse-3" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                              <p>I am text block. Click edit button to change this text. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Accordion 3 -->
+
+                        <!-- Start Accordion 4 -->
+                        <div class="panel panel-default">
+                          <!-- Toggle Heading -->
+                          <div class="panel-heading">
+                            <h4 class="panel-title">
+                              <a data-toggle="collapse" data-parent="#accordion" href="#collapse-4" class="collapsed" aria-expanded="false">
+                              Sed adipiscing ornare risus.
+                              </a>
+                            </h4>
+                          </div>
+                          <!-- Toggle Content -->
+                          <div id="collapse-4" class="panel-collapse collapse" aria-expanded="false">
+                            <div class="panel-body">
+                              <p>Donec ornare mattis suscipit. Praesent fermentum accumsan vulputate. Sed velit nulla, sagittis non erat id, dictum vestibulum ligula. Maecenas sed enim sem. Etiam scelerisque gravida purus nec interdum. Phasellus venenatis ligula in faucibus consequat. Aliquam dictum nulla eu varius porta. Maecenas congue.</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Accordion 4 -->
+                      </div>
+                        <!--// FAQ 아코디언 -->
+                <!--// section9 -->
+                <!-- section10 -->
+                <div class="h2tit" id="section10">서비스</div>
+                    <div class="h3tit">서비스1</div>
+                    <div class="service">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4 col-xl-12">
+                              <div class="service-box">
+                                <div class="service-head">
+                                  <a class="icon">
+                                    <i class="flaticon-building33"></i>
+                                  </a>
+                                  <h2>Design &amp; Build Package</h2>
+                                  <p class="desc">Vestibulum auctor dapibus neque.</p>
+                                </div>
+                                <div class="service-content">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                  <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xl-12">
+                              <div class="service-box">
+                                <div class="service-head">
+                                  <a class="icon">
+                                    <i class="flaticon-construction16"></i>
+                                  </a>
+                                  <h2>Building Renovation</h2>
+                                  <p class="desc">Vestibulum auctor dapibus neque.</p>
+                                </div>
+                                 <div class="service-content">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                  <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-md-4 col-sm-4 col-xl-12">
+                              <div class="service-box">
+                                <div class="service-head">
+                                  <a class="icon">
+                                    <i class="flaticon-construction14"></i>
+                                  </a>
+                                  <h2>Project Management</h2>
+                                  <p class="desc">Vestibulum auctor dapibus neque.</p>
+                                </div>
+                                 <div class="service-content">
+                                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                                  <a href="#" class="btn btn-effect">Read More <i class="icon-arrow-right"></i></a>
+                                </div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    <div class="h3tit">서비스2</div>
+                    <div class="service-3">
+                        <div class="container">
+                          <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                              <div class="service-item">
+                                <div class="icon">
+                                  <i class="flaticon-shovel23"></i>
+                                </div>
+                                <h3><a href="#">Tiling &amp; Painting</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4">
+                              <div class="service-item">
+                                <div class="icon">
+                                  <i class="flaticon-construction10"></i>
+                                </div>
+                                <h3><a href="#">Renovations</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                              </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-4">
+                              <div class="service-item">
+                                <div class="icon">
+                                  <i class="flaticon-house111"></i>
+                                </div>
+                                <h3><a href="#">Design &amp; Build</a></h3>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. sed diam nonummy nibheuismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+                      </div>
+                    <div class="h3tit"></div>
+                <!--// section10-->
+                <!-- section11 -->
+                <div class="h2tit" id="section11">Contact US</div>
+                    <div class="row">
+                        <div class="col-md-9">
+                          <!-- Form -->
+                          <form action="" id="contact-form" class="contact-form" role="form" method="post">
+                            <div class="row">
+                              <div class="col-md-4">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                              </div>
+                              <div class="col-md-4">
+                                <input type="email" class="form-control" name="EMAIL" placeholder="Your Email">
+                              </div>
+                              <div class="col-md-4">
+                                <input type="text" class="form-control" name="phone" placeholder="Phone">
+                              </div>
+                              <div class="col-md-12">
+                                <input type="text" class="form-control" name="subject" placeholder="Subject">
+                              </div>
+                              <div class="col-md-12">
+                                <textarea class="form-control" placeholder="Your Massage" rows="9"></textarea>
+                              </div>
+                              <div class="col-md-6">
+                                <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
+                                <div id="success"></div>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <div class="col-md-3">
+                          <h2 class="big-title">Headquarters</h2>
+                          <div class="information">
+                            <div class="contact-datails">
+                              <p><i class="icon-pointer"></i> 12 Tottenham Road, London, England.</p>
+                              <p><i class="icon-call-out"></i> +880 123 456 789 </p>
+                              <p><i class="icon-envelope"></i> info@wingtheme.com </p>
+                              <p><i class="icon-clock"></i> Sun-Sat (9am-5pm)</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                <!--// section11-->
+                <!-- section12-->
+                <div class="h2tit" id="section12">Tables</div>
+                    <div class="h3tit">Type 1</div>
+                    <section id="tables">
+                       <table class="table table-bordered table-striped table-hover">
+                          <thead>
+                             <tr>
+                                <th>#</th>
+                                <th>First Name</th>
+                                <th>Last Name</th>
+                                <th>Username</th>
+                             </tr>
+                          </thead>
+                          <tbody>
+                             <tr>
+                                <td>1</td>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                             </tr>
+                             <tr>
+                                <td>2</td>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                             </tr>
+                             <tr>
+                                <td>3</td>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                             </tr>
+                          </tbody>
+                       </table>
+                    </section>
+                    <div class="h3tit">Type 2</div>
+                    <section id="tables">
+                       <table class="table table-striped table-hover">
+                           <thead>
+                              <tr>
+                                 <th>#</th>
+                                 <th>First Name</th>
+                                 <th>Last Name</th>
+                                 <th>Username</th>
+                              </tr>
+                           </thead>
+                           <tbody>
+                              <tr>
+                                 <td>1</td>
+                                 <td>Mark</td>
+                                 <td>Otto</td>
+                                 <td>@mdo</td>
+                              </tr>
+                              <tr>
+                                 <td>2</td>
+                                 <td>Jacob</td>
+                                 <td>Thornton</td>
+                                 <td>@fat</td>
+                              </tr>
+                              <tr>
+                                 <td>3</td>
+                                 <td>Larry</td>
+                                 <td>the Bird</td>
+                                 <td>@twitter</td>
+                              </tr>
+                           </tbody>
+                       </table>
+                    </section>
+                    <div class="h3tit">Type 3</div>
+                    <section id="tables">
+                       <table class="table table-striped table-hover">
+                          <tbody>
+                             <tr>
+                                <th>항목명</th>
+                                <td><input type="text" placeholder="name"></td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                             </tr>
+                             <tr>
+                                <th>항목명</th>
+                                <td>
+                                    <select id="" name="">
+				                        <option value="">선택하세요</option>
+                                    </select>
+                                    <button type="button">그룹 추가</button>
+                                </td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                             </tr>
+                             <tr>
+                                <th>항목명</th>
+                                <td>
+									<select id="" name="" title="휴대폰 통신사 선택" style="width:65px;">
+				                        <option value="">010</option>
+				                    </select> - <input type="text" name="" maxlength="4" title="휴대폰 앞자리" style="width:65px;"> - <input type="text" name="" maxlength="4" title="휴대폰 뒷자리" style="width:65px;"></td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                             </tr>
+                          </tbody>
+                       </table>
+                    </section>
+
+                <!--// section12-->
+                <!-- section13 -->
+                <div class="h2tit" id="section13">댓글</div>
+                    <!-- 댓글 -->
+                    <div id="comments">
+                        <h2 class="comments-title"><i class="icon-bubbles"></i> Comment (03)</h2>
+                        <ol class="comments-list">
+                          <li>
+                            <div class="comment-box clearfix">
+                              <div class="user"><a href="#"><img alt="" src="assets/img/blog/user1.jpg"></a></div>
+                              <div class="comment-content">
+                                <h4 class="comment-by">
+                                  <a href="#">John Doe</a>
+                                </h4>
+                                <p>Nam liber tempor cum soluta nobis eleifend option congue nihil erdiet doming id qu possim assum. soluta nobis eleifend option congue nihil erdiet doming id qu possim assum.</p>
+                                <a href="#" class="reply-link">Reply</a>
+                              </div>
+                            </div>
+                            <ul>
+                              <li>
+                                <div class="comment-box clearfix">
+                                  <div class="user">
+                                    <a href="#"><img alt="" src="assets/img/blog/user2.jpg"></a>
+                                  </div>
+                                  <div class="comment-content content-bg">
+                                    <h4 class="comment-by">
+                                      <a href="#">Jane Smith</a>
+                                    </h4>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatibus perferendis dolore consectetur ducimus culpa alias.</p>
+                                    <a href="#" class="reply-link">Reply</a>
+                                  </div>
+                                </div>
+                              </li>
+                            </ul>
+                          </li>
+                           <li>
+                              <div class="comment-box clearfix">
+                                <div class="user"><a href="#"><img alt="" src="assets/img/blog/user3.jpg"></a></div>
+                                <div class="comment-content">
+                                  <h4 class="comment-by">
+                                    <a href="#">John Doe</a>
+                                  </h4>
+                                  <p>Nam liber tempor cum soluta nobis eleifend option congue nihil erdiet doming id qu possim assum. soluta nobis eleifend option congue nihil erdiet doming id qu possim assum.</p>
+                                  <a href="#" class="reply-link">Reply</a>
+                                </div>
+                              </div>
+                            </li>
+                          <li>
+                            <div class="comment-box clearfix">
+                              <div class="user"><a href="#"><img alt="" src="assets/img/blog/user4.jpg"></a></div>
+                              <div class="comment-content">
+                                <h4 class="comment-by">
+                                  <a href="#">Jane Smith</a>
+                                </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam voluptatibus perferendis dolore consectetur ducimus culpa alias, ipsa quae illo ab impedit explicabo reprehenderit dolorum deleniti voluptates consequatur! </p>
+                                <a href="#" class="reply-link">Reply</a>
+                              </div>
+                            </div>
+                          </li>
+                        </ol>
+                        <!-- Start Respond Form -->
+                        <div id="respond">
+                          <h2 class="respond-title">Leave reply</h2>
+                          <form action="#">
+                            <div class="row">
+                              <div class="col-md-6">
+                                <input id="author" class="form-control" name="author" type="text" value="" size="30" placeholder="Name">
+                              </div>
+                              <div class="col-md-6">
+                                <input id="email" class="form-control" name="author" type="text" value="" size="30" placeholder="Email">
+                              </div>
+                            </div>
+                            <div class="row">
+                              <div class="col-md-12">
+                                <textarea id="comment" class="form-control" name="comment" cols="45" rows="8" placeholder="Message"></textarea>
+                                <button type="submit" id="submit" class="btn btn-effect"> Submit</button>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                        <!-- End Respond Form -->
+                      </div>
+                      <!--// 댓글 -->
+                <!--// section13-->
+                <!-- section14 -->
+                <div class="h2tit" id="section14">컨텐츠 1</div>
+                    <div class="h3tit">멤버</div>
+                    <!-- 멤버 -->
+                    <div class="row">
+                        <!-- Start Memebr 1 -->
+                        <div class="col-md-3 col-sm-6">
+                          <div class="team-member">
+                            <div class="team-thumbnail">
+                              <img src="assets/img/team/team-01.png" alt="">
+                              <div class="overlay">
+                                <p class="text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan.</p>
+                                <div class="info name">
+                                  <h4>Richard Peterson</h4>
+                                  <p>Civil Engineer</p>
+                                </div>
+                                <div class="social-media">
+                                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                  <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <h4>Richard Peterson</h4>
+                              <p>Civil Engineer</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Start Memebr 2 -->
+                        <div class="col-md-3 col-sm-6">
+                          <div class="team-member">
+                            <div class="team-thumbnail">
+                              <img src="assets/img/team/team-02.png" alt="">
+                              <div class="overlay">
+                                <p class="text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan.</p>
+                                <div class="info name">
+                                  <h4>Caroline Colins</h4>
+                                  <p>Architect</p>
+                                </div>
+                                <div class="social-media">
+                                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                  <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <h4>Caroline Colins</h4>
+                              <p>Architect</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Start Memebr 3 -->
+                        <div class="col-md-3 col-sm-6">
+                          <div class="team-member">
+                            <div class="team-thumbnail">
+                              <img src="assets/img/team/team-03.png" alt="">
+                              <div class="overlay">
+                                <p class="text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan.</p>
+                                <div class="info name">
+                                  <h4>Ernest Rodgers</h4>
+                                  <p>Supervisor</p>
+                                </div>
+                                <div class="social-media">
+                                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                  <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <h4>Ernest Rodgers</h4>
+                              <p>Supervisor</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- Start Memebr 4 -->
+                        <div class="col-md-3 col-sm-6">
+                          <div class="team-member">
+                            <div class="team-thumbnail">
+                              <img src="assets/img/team/team-04.png" alt="">
+                              <div class="overlay">
+                                <p class="text">Proin in magna a ipsum viverra scelerisq enec turp, Nunc vestibulum fringilla accumsan.</p>
+                                <div class="info name">
+                                  <h4>Amanda Lennon</h4>
+                                  <p>Manager</p>
+                                </div>
+                                <div class="social-media">
+                                  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                                  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                                  <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                                  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="info">
+                              <h4>Amanda Lennon</h4>
+                              <p>Manager</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- End Memebr 4 -->
+                      </div>
+                    <!--// 멤버 -->
+                    <div class="h3tit">연혁</div>
+                    <!-- 연혁 -->
+                    <div class="company-history">
+                        <div class="row">
+                          <!-- Company History 1 -->
+                          <div class="col-sm-3">
+                            <img src="assets/img/about/h1.jpg" alt="">
+                          </div>
+                          <div class="col-sm-9">
+                            <div class="content-company">
+                              <div class="content-history-header">
+                                <div class="year">
+                                  1992
+                                </div>
+                                <h3>Start with a small service</h3>
+                              </div>
+                              <p>BestBuild has made a way from a small company to a large corporation as it is now today. Everything started from the founder's initiative to open a small service of individual ConBiz worker. He was able to express such commitment and professionalism that people kept returning and recommending him when he actually realized this is what he is destined to be doing.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="company-history">
+                        <div class="row">
+                          <!-- Company History 1 -->
+                          <div class="col-sm-3">
+                            <img src="assets/img/about/h1.jpg" alt="">
+                          </div>
+                          <div class="col-sm-9">
+                            <div class="content-company">
+                              <div class="content-history-header">
+                                <div class="year">
+                                  1992
+                                </div>
+                                <h3>Start with a small service</h3>
+                              </div>
+                              <p>BestBuild has made a way from a small company to a large corporation as it is now today. Everything started from the founder's initiative to open a small service of individual ConBiz worker. He was able to express such commitment and professionalism that people kept returning and recommending him when he actually realized this is what he is destined to be doing.</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- 연혁 -->
+                    <div class="h3tit">파트너</div>
+                    <!-- 파트너 -->
+                    <div class="partners">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <div class="logo">
+                              <img src="assets/img/partners/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <div class="partners-text">
+                              <h3><a href="#">Edge Technology Llc</a></h3>
+                              <p>Wonderful Partner in the sphere of advances in technology, sustainability, lean practices, building information modeling, safety, community engagement, learning and development, and field operations</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <div class="partners">
+                        <div class="row">
+                          <div class="col-sm-3">
+                            <div class="logo">
+                              <img src="assets/img/partners/partner-1.png" alt="">
+                            </div>
+                          </div>
+                          <div class="col-sm-9">
+                            <div class="partners-text">
+                              <h3><a href="#">Edge Technology Llc</a></h3>
+                              <p>Wonderful Partner in the sphere of advances in technology, sustainability, lean practices, building information modeling, safety, community engagement, learning and development, and field operations</p>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- 파트너 -->
+
+                <!--// section14-->
+                <!-- section15 -->
+                <div class="h2tit" id="section15">컨텐츠 2</div>
+                <div class="row">
+                   <div class="col-md-12">
+                      <!-- Form -->
+                      <form action="" id="" class="" role="" method="">
+                        <div class="row">
+                            <!-- 2개일 경우 -->
+                            <div class="col-md-2">
+                                Name *
+                            </div>
+                            <div class="col-md-10">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-2">
+                                Name *
+                            </div>
+                            <div class="col-md-10">
+                                <textarea class="form-control" placeholder="Your Massage" rows="9"></textarea>
+                            </div>
+                            <!--// 2개일 경우 -->
+                            <!-- 4개일 경우 -->
+                            <div class="col-md-2">
+                                Name *
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                            </div>
+                            <div class="col-md-2">
+                                Name *
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                            </div>
+                            <!--// 4개일 경우 -->
+
+                            <div class="col-md-6">
+                               <button type="submit" id="submit" class="btn btn-effect"><i class="fa fa-check"></i> Send Message</button>
+                               <div id="success"></div>
+                            </div>
+                         </div>
+                      </form>
+
+
+                   </div>
+                </div>
+                <!--// section15-->
+                <div class="h2tit">끝</div>
+                <!--/.col-xs-12-->
+             </div>
+             <!--/.row-->
+          </div>
+       </div>
+       <!--/.container-->
+    </div>
+    <!--/.page-container-->
+
+    <!-- Main JS  -->
+    <!--
+    <script type="text/javascript" src="assets/js/jquery-min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
+    -->
+    <script type='text/javascript' src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script type='text/javascript' src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/js/modalpopup.js"></script>
+    <script type="text/javascript" src="assets/js/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="assets/js/modernizrr.js"></script>
+    <script type="text/javascript" src="assets/js/nivo-lightbox.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mixitup.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.appear.js"></script>
+    <script type="text/javascript" src="assets/js/count-to.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.parallax.js"></script>
+    <script type="text/javascript" src="assets/js/smooth-scroll.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.slicknav.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    <!-- Revelosition slider js -->
+    <script src="assets/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="assets/js/jquery.themepunch.tools.min.js"></script>
+
+    <script>
+    $(document).ready(function() {
+
+      var owl = $("#owl-slider1");
+
+      owl.owlCarousel({
+          items : 6, //10 items above 1000px browser width
+          itemsDesktop : [1000,5], //5 items between 1000px and 901px
+          itemsDesktopSmall : [900,3], // betweem 900px and 601px
+          itemsTablet: [600,2], //2 items between 600 and 0
+          itemsMobile : false // itemsMobile disabled - inherit from itemsTablet option
+      });
+
+      // Custom Navigation Events
+      $(".next").click(function(){
+        owl.trigger('owl.next');
+      })
+      $(".prev").click(function(){
+        owl.trigger('owl.prev');
+      })
+      $(".play").click(function(){
+        owl.trigger('owl.play',1000); //owl.play event accept autoPlay speed as second parameter
+      })
+      $(".stop").click(function(){
+        owl.trigger('owl.stop');
+      })
+
+    });
+    </script>
+</body>
+</html>
