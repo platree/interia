@@ -1,0 +1,152 @@
+
+// Preset Loader
+@import "presets.less";
+
+.tparrows.preview1:hover:after {
+	color: @preset;
+}
+.tp-bullets.preview1 .bullet:hover, .tp-bullets.preview1 .bullet.selected{
+	background: @preset !important;
+}
+.tp-caption{	
+	.small-description{
+		color: #fff;
+		font-size: 20px;
+		line-height:28px;
+		letter-spacing: 1px; 
+		font-weight: 300;
+		span{
+			font-size: 32px;
+			font-weight: 700;
+		}
+	}
+	.big-title{
+		font-size: 53px;
+		color: #fff;
+		line-height: 60px; 
+		margin: 0px; 
+		padding: 0px; 
+		letter-spacing: 0px;		
+	}
+	.btn-large{
+		color: #fff;
+		font-size: 22px;
+		padding: 18px 40px;
+		z-index: 11;
+	}
+}
+	//carousel/slider
+	#carousel-area{
+		overflow: hidden;
+			.carousel-inner .item {
+			  opacity: 0;
+			  transition-property: opacity;
+			}
+			.carousel-inner .active {
+			  opacity: 1;
+			}
+			.carousel-inner .active.left,
+			.carousel-inner .active.right {
+			  left: 0;
+			  opacity: 0;
+			  z-index: 1;
+			}
+			.carousel-inner .next.left,
+			.carousel-inner .prev.right {
+			  opacity: 1;
+			}
+			.carousel-control {
+			  z-index: 2;
+			}
+		.item{
+			background-size: 100%; background-size: cover;
+			height: 560px;
+			.carousel-caption{
+				top: 35%; right: 10%; left: 10%;
+				h2{
+					font-size: 40px; 
+					margin-bottom: 15px;
+					text-transform: uppercase;
+					-webkit-animation-name: fadeInDown;
+					animation-name: fadeInDown;
+					-webkit-animation-duration: 0.8s;
+					animation-duration: 0.8s;
+				}
+				h3{
+					font-size: 20px; 
+					font-weight: 100;
+					-webkit-animation-name: fadeInUp;
+					animation-name: fadeInUp;
+					-webkit-animation-duration: 0.8s;
+					animation-duration: 0.8s;					
+					margin-bottom: 30px;
+					line-height: 40px;
+				}
+				.btn{
+					margin: 10px;
+					-webkit-animation-name: fadeInUp;
+					animation-name: fadeInUp;
+					-webkit-animation-duration: 0.8s;
+					animation-duration: 0.8s;					
+				}				
+				text-shadow: none;
+			}
+		}
+		.active {opacity: 1;}
+	    .active.left,
+	    .active.right {
+	      left: 0;
+	      opacity: 0;
+	      z-index: 1;
+	    }
+		.carousel-control{
+			z-index: 10;
+			width: 35px; 
+			height: 55px; 
+			top: 50%; 
+			padding: 10px 5px; 
+			box-shadow: none; 
+			background-image: none;
+			margin-top: -35px;
+			text-shadow: none;			
+			i{
+			border: 2px solid #fff;
+			width: 50px;
+			height: 50px;
+			padding: 15px;
+			}
+		}
+		.left.carousel-control{left: 5%;}
+		.right.carousel-control{right: 5%;}
+		.carousel-indicators{
+			bottom: 45px;
+			} 
+		&:hover{
+		.carousel-control{display: block;}
+		}		
+	    i{margin-right: 10px;}
+	}
+
+// Components and Section Styles
+.hero-area{
+	background: url(../img/hero-area.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	color: #fff;
+	overflow: hidden;
+	padding: 90px 0;
+	.contents{
+		padding: 110px 0px;
+		text-align: center;
+		h1{	
+			font-size: 50px;
+			margin-bottom: 15px;
+		}
+		p{
+			font-size: 18px;
+			color: #fff;
+			font-weight: 400;
+		}
+		.btn{margin:15px;}
+	}
+}

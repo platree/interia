@@ -1,0 +1,836 @@
+// Preset Loader
+@import "presets.less";
+
+// Portrait tablet to landscape and desktop 
+
+@media (min-width: 768px) and (max-width: 1024px) { 
+	ul.social-list li a i{
+		width: 30px;
+		height: 30px;
+	}
+	.btn-small{
+		font-size: 14px;
+	}
+	.top-bar .contact-details li a{
+		font-size: 13px;
+		margin-right: 10px;
+	}
+	.affix .logo-wrapper{
+		margin-top: 3px;
+	}
+	.affix .navbar-brand > img{
+		margin-top: 3px;
+	}
+	.navbar-brand > img{
+		width: 115px;
+		margin-top: 10px;
+	}
+	.navbar-default .navbar-nav{
+		margin-right: -15px!important;
+	}
+	.navbar-default .navbar-nav > li > a{
+		padding: 7px 6px;
+		font-size: 13px;
+	}
+	.dropdown li a, .sup-dropdown li a{
+		font-size: 13px;
+	}
+
+	.full-search .close-search{
+		right: 30px;
+	}
+	//Carousel
+	#carousel-area{	
+		.item {
+			height: 380px;
+		.carousel-caption{
+			h2{font-size: 24px; margin-bottom: 10px;}
+			h3{font-size: 18px; margin-bottom: 15px; line-height: 20px;}
+			}
+		}
+	}
+
+	.hero-area .contents h1{
+		font-size: 36px;
+	}
+
+	// boxed
+	.boxed{		
+		h3{
+			font-size: 18px;
+		}
+	}
+
+	// Service
+	.service-box{
+		.service-head h2{
+			font-size: 16px;
+		}
+	}
+
+	// Company about
+	.company-ever .content h2{
+		font-size: 16px;
+	}
+	.company-ever .content{
+		padding: 25px;
+		margin-right: 0px;
+	}
+	.company-ever .content::before{
+		display: none;
+	}
+
+	// portfolio
+	.controls a{
+		margin: 5px;
+		padding: 10px 8px;
+	}
+	.portfolio-item .content{
+		padding: 10px 22px;
+		h3{
+			font-size: 16px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+
+	// Counter Section
+	.counter-item{
+		border-left: none;
+	}
+
+	//team
+	.team-member{
+		margin: 15px 0;
+	} 
+
+	// Rrcent carousel
+	.touch-carousel .owl-controls .owl-buttons{
+		top: -22px;
+	}
+
+	// Testimonial 
+	#testimonial{
+	 p{
+	 	margin: 40px 0;
+	 }
+	}
+
+	// Footer
+	.footer-widget{
+		margin-bottom: 30px;
+		img{
+			width: 100px;
+		}
+	}
+
+	// About Pages
+	.featured-thumb{
+		margin-top: 30px;
+	}
+	.banner h1{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	// Pricing Pages
+	.pricing-tables .pricing-table{
+		margin-bottom: 30px;
+	}
+	.cta p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+
+	// Services Pages
+	.service-3 .service-item{
+		padding: 15px;
+	}
+	.services-2 .tabs-content{
+		padding: 15px 0;
+	}
+	.services-2 .tab-menu .list-group li a{
+		padding: 13px;
+	}
+	.services-2 .tabs-content .services-list{
+		padding: 15px 0;
+	}
+
+	// Blog pages	
+	#pagination{
+		margin-bottom: 50px;
+	}
+
+	// Single project
+	.project-details, .share{
+		margin-top: 30px;
+	}
+
+	// Contact Pages
+	.contact-form{
+		margin-bottom: 50px;
+	}
+
+}
+ 
+// Landscape phone to portrait tablet 
+@media (max-width: 767px) {
+	.navbar-toggle{
+		display: none;
+	}
+	.affix .logo-wrapper{
+		margin-top: 3px;
+	}
+	.logo-wrapper .navbar-brand img{
+		width: 54%;
+		margin-top: -3px;
+	}
+	.navbar-header{
+		position: relative;
+	}
+	.top-bar{
+		display: none;
+	}
+	.contact-details{
+		display: none;
+	}
+	.dropdown li, .sup-dropdown li{
+		border-bottom: none;
+	}
+
+	.logo-wrapper{
+		position: absolute;
+		top: 0px;
+		margin-top: 22px;
+	}
+	//Carousel
+	#carousel-area{	
+		.item {
+			height: 280px;
+		.carousel-caption{
+			h2{font-size: 24px; margin-bottom: 10px;}
+			h3{font-size: 18px; margin-bottom: 15px; line-height: 20px;}
+			}
+		}
+	}
+	.hero-area .contents h1{
+		font-size: 30px;
+	}
+
+	// boxed
+	.boxed{		
+		h3{
+			font-size: 20px;
+			padding: 15px 0;
+		}
+		.btn-border{
+			float: none;
+		}
+	}
+
+	// Service
+	.service-box{
+		.service-head h2{
+			font-size: 16px;
+		}
+		margin-bottom: 30px;
+	}
+
+	// Company about
+	.company-ever .content h2{
+		font-size: 16px;
+	}
+	.company-ever .content{
+		padding: 25px;
+		margin-right: 0px;
+	}
+	.company-ever .content::before{
+		display: none;
+	}
+
+	// portfolio
+	.controls a{
+		margin: 5px;
+		padding: 10px 8px;
+	}
+	.portfolio-item .content{
+		padding: 10px 22px;
+		h3{
+			font-size: 16px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+
+	// Team
+	.team-member{
+		margin-bottom: 30px;
+	}
+	
+	// Counter Section
+	.counter-item{
+		border-left: none;
+	}
+
+	// Rrcent carousel
+	.touch-carousel .owl-controls .owl-buttons{
+		top: -22px;
+	}
+
+	// Testimonial 
+	#testimonial p{
+		margin: 40px 0;
+		.quote-left{
+			display: none;
+		}
+		.quote-right{
+			display: none;
+		}
+	}
+
+	// Footer
+	.footer-widget{
+		margin-bottom: 30px;
+		img{
+			width: 100px;
+		}
+	}
+
+	// About Pages
+	.featured-thumb{
+		margin-top: 30px;
+	}
+	.banner h1{
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	// Partners Pages
+	.partners .logo{
+		margin-bottom: 15px;
+	}
+
+	// Careers Pages
+	.panel-heading .panel-title a{
+		font-size: 12px;
+	}
+	// Pricing Pages
+	.pricing-tables .pricing-table{
+		margin-bottom: 30px;
+	}
+	.cta p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	.service-3 .service-item{
+		margin-bottom: 30px;
+	}
+
+	// Services Pages
+	.services-2 .tabs-content{
+		padding: 15px 0;
+	}
+	.services-2 .tabs-content .services-list{
+		padding: 15px 0;
+	}
+
+	// 404 pages
+	.error-page{
+		h1{
+			font-size: 150px;
+			margin: 50px 0;
+		}
+		h2{
+			font-size: 22px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+
+	// Blog pages
+	.blog-post .post-thumb .hover-wrap .link{
+		top: 40%;
+	}
+	.blog-post .date{
+		float: none;
+	}
+	.blog-post .post-content{
+		padding: 30px 0;
+	}
+	#sidebar{
+		margin-top: 50px;
+	}
+
+	// Single Pages
+	.blog-post .post-content .meta .meta-part{
+		margin-right: 10px;
+	}
+	#comments .comments-list li ul{
+		padding-left: 0;
+	}
+
+	// Contact Pages
+	.contact-form{
+		margin-bottom: 50px;
+	}
+}
+@media (max-width: 568px) {
+	.section{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.contact-details{
+		display: none;
+	}
+	.affix .logo-wrapper{
+		margin-top: 3px;
+	}
+	.logo-wrapper .navbar-brand img{
+		width: 54%;
+		margin-top: -3px;
+	}
+	.top-bar{
+		display: none;
+	}
+	//Carousel
+	#carousel-area{	
+		.item {
+			height: 280px;
+		.carousel-caption{
+			h2{font-size: 24px; margin-bottom: 10px;}
+			h3{font-size: 18px; margin-bottom: 15px; line-height: 20px;}
+			}
+		}
+	}
+	// boxed
+	.boxed{		
+		h3{
+			font-size: 20px;
+			padding: 15px 0;
+		}
+		.btn-border{
+			float: none;
+		}
+	}
+
+	// Service
+	.service-box{
+		.service-head h2{
+			font-size: 16px;
+		}
+		margin-bottom: 30px;
+	}
+
+	// Company about
+	.company-ever .content h2{
+		font-size: 16px;
+	}
+	.company-ever .content{
+		padding: 25px;
+		margin-right: 0px;
+	}
+	.company-ever .content::before{
+		display: none;
+	}
+
+	// portfolio
+	.controls a{
+		margin: 5px;
+		padding: 10px 8px;
+	}
+	.portfolio-item .content{
+		padding: 10px 22px;
+		h3{
+			font-size: 16px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+
+	// Team
+	.team-member{
+		margin-bottom: 30px;
+	}
+	
+	// Counter Section
+	.counter-item{
+		border-left: none;
+	}
+
+	// Rrcent carousel
+	.touch-carousel .owl-controls .owl-buttons{
+		top: -22px;
+	}
+
+	// Single project
+	.project-details, .share{
+		margin-top: 30px;
+	}
+	// Testimonial 
+	#testimonial p{
+		.quote-left{
+			display: none;
+		}
+		.quote-right{
+			display: none;
+		}
+	}
+	#testimonial{
+		.client-info{
+			margin: 42px 10px;
+			.client-name{
+				font-size: 14px;
+			}
+		}
+	}
+
+	// Footer
+	.footer-widget{
+		margin-bottom: 30px;
+		img{
+			width: 100px;
+		}
+	}
+
+	// About Pages
+	.featured-thumb{
+		margin-top: 30px;
+	}
+	.banner h1{
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	// Partners Pages
+	.partners .logo{
+		margin-bottom: 15px;
+	}
+
+	// Careers Pages
+	.panel-heading .panel-title a{
+		font-size: 12px;
+	}
+	// Pricing Pages
+	.pricing-tables .pricing-table{
+		margin-bottom: 30px;
+	}
+	.cta p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	.service-3 .service-item{
+		margin-bottom: 30px;
+	}
+
+	// Services Pages
+	.services-2 .tabs-content{
+		padding: 15px 0;
+	}
+	.services-2 .tabs-content .services-list{
+		padding: 15px 0;
+	}
+
+	// 404 pages
+	.error-page{
+		h1{
+			font-size: 150px;
+			margin: 50px 0;
+		}
+		h2{
+			font-size: 22px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+
+	// Blog pages
+	.blog-post .post-thumb .hover-wrap .link{
+		top: 40%;
+	}
+	.blog-post .date{
+		float: none;
+	}
+	.blog-post .post-content{
+		padding: 30px 0;
+	}
+	#sidebar{
+		margin-top: 50px;
+	}
+
+	// Single Pages
+	.blog-post .post-content .meta .meta-part{
+		margin-right: 10px;
+	}
+	#comments .comments-list li ul{
+		padding-left: 0;
+	}
+
+	// Contact Pages
+	.contact-form{
+		margin-bottom: 50px;
+	}
+}
+
+// Landscape phones and down 
+@media (max-width: 480px) { 
+	.section-title{
+		font-size: 20px;
+	}
+	.section{
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+	.big-title{
+		font-size: 18px;
+	}
+	.logo-wrapper .navbar-brand img{
+		width: 54%;
+		margin-top: 0px;
+	}
+	.hidden-xs{
+		display: none;
+	}
+	.post-title{
+		font-size: 16px;
+	}
+	.contact-details{
+		display: none;
+	}
+	//Carousel
+	#carousel-area{	
+		height: 140px;
+		.item {
+		.carousel-caption{
+			top: -5%;
+			h2{font-size: 18px; margin-bottom: 10px;}
+			h3{display: none;}
+			}
+		}
+	}
+	#carousel-area .carousel-control{
+		top: 20%;
+	}
+	#carousel-area .right.carousel-control{
+		right: 10%;
+	}
+	.hero-area .contents h1{
+		font-size: 22px;
+	}
+
+	// boxed
+	.boxed{		
+		h3{
+			font-size: 20px;
+			padding: 15px 0;
+		}
+		.btn-border{
+			float: none;
+		}
+	}
+
+	// Service
+	.service-box{
+		.service-head h2{
+			font-size: 16px;
+		}
+		margin-bottom: 30px;
+	}
+
+	// Company about
+	.company-ever .content h2{
+		font-size: 16px;
+	}
+	.company-ever .content{
+		padding: 25px;
+		margin-right: 0px;
+	}
+	.company-ever .content::before{
+		display: none;
+	}
+
+	// portfolio
+	.controls a{
+		margin: 5px;
+		padding: 10px 8px;
+	}
+	.portfolio-item .content{
+		padding: 10px 22px;
+		h3{
+			font-size: 16px;
+		}
+		p{
+			font-size: 14px;
+		}
+	}
+
+	// Team
+	.team-member{
+		margin-bottom: 30px;
+	}
+	
+	// Counter Section
+	.counter-item{
+		border-left: none;
+	}
+
+	// Rrcent carousel
+	.touch-carousel .owl-controls .owl-buttons{
+		top: -22px;
+	}
+
+	// Testimonial 
+	#testimonial p{
+		.quote-left{
+			display: none;
+		}
+		.quote-right{
+			display: none;
+		}
+	}
+	#testimonial{
+		.client-info{
+			margin: 42px 10px;
+			.client-name{
+				font-size: 14px;
+			}
+		}
+	}
+
+	// Footer
+	.footer-widget{
+		margin-bottom: 30px;
+		img{
+			width: 100px;
+		}
+	}
+
+	// About Pages
+	.featured-thumb{
+		margin-top: 30px;
+	}
+	.banner h1{
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	// Partners Pages
+	.partners .logo{
+		margin-bottom: 15px;
+	}
+
+	// Careers Pages
+	.panel-heading .panel-title a{
+		font-size: 12px;
+	}
+	// Pricing Pages
+	.pricing-tables .pricing-table{
+		margin-bottom: 30px;
+	}
+	.cta p{
+		font-size: 16px;
+		line-height: 24px;
+		margin-bottom: 30px;
+	}
+	.service-3 .service-item{
+		margin-bottom: 30px;
+	}
+
+	// Services Pages
+	.services-2 .tabs-content{
+		padding: 15px 0;
+	}
+	.services-2 .tabs-content .services-list{
+		padding: 15px 0;
+	}
+
+	// 404 pages
+	.error-page{
+		h1{
+			font-size: 150px;
+			margin: 50px 0;
+		}
+		h2{
+			font-size: 22px;
+		}
+		p{
+			font-size: 16px;
+		}
+	}
+
+	// Blog pages
+	.blog-post .post-thumb .hover-wrap .link{
+		top: 40%;
+	}
+	.blog-post .date{
+		float: none;
+	}
+	.blog-post .post-content{
+		padding: 30px 0;
+	}
+	#sidebar{
+		margin-top: 50px;
+	}
+	#carousel-area .item .carousel-caption .btn{
+		display: none;
+	}
+	#carousel-area .carousel-control i{
+		border: none;
+	}
+	#carousel-area .item .carousel-caption{
+		margin-top: 30px;
+	}
+
+	// Single Pages
+	.blog-post .post-content .meta .meta-part{
+		margin-right: 10px;
+	}
+	// Single project
+	.project-details, .share{
+		margin-top: 30px;
+	}
+	#comments .comments-list li ul{
+		padding-left: 0;
+	}
+
+	// Contact Pages
+	.contact-form{
+		margin-bottom: 50px;
+	}
+	.breadcrumb{
+		width: 240px;
+	}
+	.nav-tabs > li > a{
+		font-size: 12px;
+	}
+	.panel-heading .panel-title a{
+		font-size: 11px;
+	}
+
+}
+
+// Large desktop 
+@media (max-width: 1024px) { 
+	// Featured Section
+	.featured-header .featured-title{
+		padding-left: 57px;
+		h4 a{
+			font-size: 12px;
+		}
+		p{
+			font-size: 11px;
+		}
+	}
+	.address li a{
+		font-size: 12px;
+	}
+	.product .post-content h4{
+		font-size: 13px;
+	}
+}

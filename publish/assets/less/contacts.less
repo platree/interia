@@ -1,0 +1,59 @@
+// Preset Loader
+@import "presets.less";
+#content{
+	.big-title{
+		margin-bottom: 30px;
+	}
+}
+.form-control{
+	height: 48px;
+}
+.form-control,
+textarea{
+	background: #F7F7F7;
+	border: none;
+	font-size: 15px;
+	outline: medium none;
+	color: #999;
+	margin-bottom: 30px;
+	padding: 10px 12px;
+	border-radius: 0;
+	border-bottom: 2px solid transparent;
+	box-shadow: none;
+}
+.form-control:focus,
+textarea:focus{
+	box-shadow: none;
+	border-bottom: 2px solid @preset;
+}
+
+.information{
+	margin-top: 15px;
+}
+.contact-datails{
+	margin-bottom: 34px;
+	min-height: 75px;
+	position: relative;		
+	p{
+		margin-bottom: 1em;
+		i{
+			padding-right: 10px;
+		}		
+	}
+}
+// map
+.title-banner{
+	position: relative;
+	padding: 40px;
+	color: #fff;
+	h2{
+		font-size: 30px;
+	}
+}
+#google-map,
+body,
+html {
+  padding: 0;
+  height: 400px;
+}
+

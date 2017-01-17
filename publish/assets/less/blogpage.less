@@ -1,0 +1,429 @@
+// Preset Loader
+@import "presets.less";
+
+.post-title{
+  font-size: 22px;
+  font-weight: 400;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  a{
+    color: #444;
+  }
+}
+
+// Blog Styles
+.blog-post {
+  margin-bottom: 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #eee;
+    .post-thumb{
+      position: relative; 
+      .hover-wrap{
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: block;
+        width: 100%;
+        text-align: center;
+        height: 100%;
+        background: rgba(5, 47, 67, 0.8) ;
+        opacity: 0;
+        -webkit-transition: all 0.4s ease;
+        -moz-transition: all 0.4s ease;
+        transition: all 0.4s ease;
+        .link{
+          position: absolute;
+          width: 100%;
+          top: 50%;
+          margin-top: 22px;
+          z-index: 1;
+          padding: 0;
+          display: block;  
+          -webkit-transition: all 0.4s ease;
+          -moz-transition: all 0.4s ease;
+          transition: all 0.4s ease;
+          i{
+            font-size: 20px;
+            text-align: center;
+            width: 40px;
+            line-height: 40px;
+            height: 40px;     
+            padding: 10px;
+            margin: 5px;
+            -webkit-transition: all 0.4s ease;
+            -moz-transition: all 0.4s ease;
+            transition: all 0.4s ease;
+          }        
+        }
+      }    
+    }
+    .post-thumb:hover .hover-wrap{
+      opacity: 1;
+    }
+    .post-thumb:hover .link{
+      margin-top: 0px;
+    }
+    .date{
+      border: 1px solid #e3e3e3;
+      float: left;
+      height: 68px;
+      margin-top: 32px;
+      text-align: center;
+      width: 68px;
+      p{
+        color: #999;
+        padding: 6px 0;
+        text-transform: uppercase;
+      }
+    }
+    
+
+  .post-content{
+    width: 100%;
+    padding: 30px 92px;
+    .meta{
+      font-size: 13px;
+      font-style: italic;
+      margin-bottom: 17px;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #eee;
+      .meta-part{
+        display: inline-block;
+        margin-bottom: 10px;
+        margin-right: 25px;
+        a{
+          color: #999;
+        }        
+      }
+    }
+    p{
+      margin-bottom: 30px;
+    }
+  } 
+}
+
+// Pagination
+#pagination span,
+#pagination a {
+  display: inline-block;
+  text-align: center;
+  height: 34px;
+  width: 34px;
+  color: #666;
+  line-height: 33px;
+  border: 1px solid #eee;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -o-border-radius: 2px;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+#pagination a:hover {
+  border-color: #ddd;
+}
+
+#pagination .all-pages, #pagination .next-page {
+  width: auto;
+  padding: 0 14px;
+}
+
+// Sidebar Styles
+
+.widget-title{
+  font-size: 15px;
+  font-weight: 400;
+  color: #333333;
+  letter-spacing: 1px;
+  padding: 10px 0;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  word-spacing: 1px;
+  position: relative;
+  &:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+  }
+}
+.right-sidebar{
+  padding-left: 20px;
+}
+.search{
+  width: 100%;
+  margin-bottom: 0px !important;
+  position: relative;
+}
+.search-btn{
+ position: absolute;
+  top: 12px;
+  right: 30px;
+  border: none;
+  background: transparent;
+  i{
+    color: #999;
+  }
+}
+
+#sidebar {
+  margin-bottom: 30px;  
+  .widget{
+      border-bottom: 1px solid #E9E9E9;
+      margin-bottom: 22px;
+      padding-bottom: 30px;      
+  }
+  .widget:last-child{
+    border-bottom: none;
+  }
+  .cat-list{    
+    li {
+      padding: 7px 0;
+      a {
+        text-decoration: none;
+        color: #999;
+        display: inline-block;
+        transition: all 0.2s ease-in-out;
+        -moz-transition: all 0.2s ease-in-out;
+        -webkit-transition: all 0.2s ease-in-out;
+        -o-transition: all 0.2s ease-in-out;
+      }
+      .num-posts{
+        font-size: 12px;
+      }
+    }
+    li:last-child {
+      border: none;
+    }
+    
+  }
+
+  .posts-list{
+      li {
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #eee;
+      }
+      li:last-child {
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+      .widget-thumb {
+        float: left;
+        a{
+          display: block;
+          img {
+            opacity: 1;
+            max-width: 90px;
+            margin: 5px 15px 0 0;
+            transition: all 0.2s ease-in-out;
+            -moz-transition: all 0.2s ease-in-out;
+            -webkit-transition: all 0.2s ease-in-out;
+            -o-transition: all 0.2s ease-in-out;
+          }
+        }
+      }
+      .widget-thumb:hover {
+          img {
+              opacity: 0.7;
+          }
+      }
+      .widget-content {
+        a{
+          font-weight: 400;
+          color: #666;
+        }
+        span {
+          color: #999;
+          font-size: 12px;
+          display: block;
+          margin: 3px 0;
+          i{
+            padding-right: 5px;
+          }
+        }
+      }
+  }  
+
+  .tag {
+    a {
+      display: inline-block;
+      font-size: 12px;
+      color: #444;
+      padding: 7px 12px;
+      border: 1px solid #E5E5E5; 
+      margin: 4px 2px;
+      border-radius: 0x;
+      transition: all 0.4s ease-in-out;
+      -moz-transition: all 0.4s ease-in-out;
+      -webkit-transition: all 0.4s ease-in-out;
+      -o-transition: all 0.4s ease-in-out;
+      i{
+        padding-right: 5px;
+      }
+    }
+  }
+}
+
+// End blog page
+
+// Single post Styles
+.single-gallery{
+  .post-content{
+    padding: 30px 0;
+  }
+  p{
+    margin-bottom: 20px!important;
+  }
+}
+blockquote{
+  padding: 20px;
+  background: #F5F5F5;
+  position: relative;
+  i{
+    font-size: 32px;
+    position: absolute;
+    margin-top: 10px;
+  } 
+  .quote-text{
+    color: #999;
+    font-size: 14px;
+    line-height: 26px;
+    display: block;
+    font-style: italic;
+    font-weight: 400;
+  }
+}
+// Comments Style
+
+.comments-title {
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+#comments .comments-list {
+  padding: 0;
+  margin: 0 0 35px 0;
+    li .comment-box {
+    border-radius: 4px;
+    padding: 22px 0;
+  }
+}
+
+#comments .comments-list li ul {
+  padding-left: 100px;
+}
+#comments .user{
+  background: #fff;
+  width: 80px;
+  float: left;  
+  border: 2px solid #fff;
+  box-shadow: 0px 0px 3px #999;
+  height: 80px;
+  position: relative;
+}
+#comments{
+  .comment-content {
+    margin-left: 100px;
+    background: #F7F7F7;
+    border-radius: 0;
+    padding: 16px 22px;
+    border: 3px solid #fff;
+    box-shadow: 0px 0px 2px #f1f1f1;
+    .comment-meta{
+      margin-bottom: 5px;    
+    }  
+    .comment-by{
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 33px;
+      text-transform: uppercase;
+      &:hover{
+        color: #444;
+      }
+    }
+    .comment-date {
+      color: #444;
+    }
+  }
+  .content-bg{
+    background: none;
+  }
+}
+.reply-link{
+  color: #fff;
+  background: #CACACA;
+  padding: 2px 22px;
+  border-radius: 0px;  
+  display: inline-block;
+  font-size: 12px;
+  margin: 10px 3px 0 0;
+  -webkit-transition: all 0.4s ease;
+  -moz-transition: all 0.4s ease;
+  -ms-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+.respond-title {
+  font-weight: 400;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  border-top: 1px solid #EEE;
+}
+
+
+//  07 - Single Project Styles
+.project-content{
+  h4{
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+    span {
+      padding-bottom: 8px;
+      border-bottom: 1px solid;
+    }
+  }   
+  p{
+    margin-bottom: 30px;
+  }   
+  .share{
+    margin-top: 20px;
+    font-size: 14px;
+    span{
+      margin-right: 10px;
+    }
+  } 
+}
+
+.recent-projects h4.title {
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  span {
+    padding-bottom: 8px;
+    border-bottom: 1px solid;
+  }
+}
+.projects-carousel {
+  width: 1150px !important;
+  .item {
+    margin-right: 15px;
+    margin-bottom: 0;
+  }
+}
+
+// Faq page Style
+.main-desc{
+  margin-bottom: 30px;
+  p{
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 36px;
+  }
+}
